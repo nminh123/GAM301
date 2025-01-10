@@ -13,9 +13,11 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    public MoneyManager moneyManager;    
+    public MoneyManager moneyManager;
+    public Inventory inventoryManager;
     private void Reset()
     {
-        moneyManager = GetComponent<MoneyManager>();
+        moneyManager = GetComponentInChildren<MoneyManager>();
+        inventoryManager = GetComponentInChildren<Inventory>();
     }
 }

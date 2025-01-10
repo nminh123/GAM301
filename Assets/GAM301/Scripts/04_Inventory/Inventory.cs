@@ -6,11 +6,16 @@ public class Inventory : MonoBehaviour
 {
     private List<InventoryItem> inventory;
     private Dictionary<ItemSO, InventoryItem> inventoryDic;
+
+    [Header("Inventory UI")]
+    [SerializeField] private Transform inventorySlots;
+    private ItemSlot[] itemSlot;
     private void Start()
-    {
-        
+    {     
         inventory = new();
         inventoryDic = new();
+
+        itemSlot = inventorySlots.GetComponentsInChildren<ItemSlot>();
     }
     private void Update()
     {
@@ -38,6 +43,20 @@ public class Inventory : MonoBehaviour
             }
             else
                 value.RemoveStack();
+        }
+
+    }
+    
+    private void UpdateSlotsUI()
+    {
+        for(int i = 0; i < itemSlot.Length; i++)
+        {
+            itemSlot[i].CleanSlot();
+        }
+
+        for(int i = 0; i < inventory.Count; i++)
+        {
+            itemSlot[i].UpdateSlot(inventory[i]);
         }
     }
 }
