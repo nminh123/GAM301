@@ -1,7 +1,7 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName ="Data/Item",menuName ="New Item")]
-public class ItemSO : MonoBehaviour
+[CreateAssetMenu(fileName ="New Item",menuName = "Data/Item")]
+public class ItemSO : ScriptableObject
 {
     public byte Id;
     public string nameItem;
