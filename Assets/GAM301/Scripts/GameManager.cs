@@ -15,9 +15,11 @@ public class GameManager : MonoBehaviour
 
     public MoneyManager moneyManager;
     public Inventory inventoryManager;
+    public SoundManager soundManager;
     private void Reset()
     {
         moneyManager = GetComponentInChildren<MoneyManager>();
         inventoryManager = GetComponentInChildren<Inventory>();
+        soundManager = GetComponentInChildren<SoundManager>();
     }
 }
