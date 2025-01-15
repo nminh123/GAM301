@@ -12,10 +12,11 @@ public class PlayerScript : MonoBehaviour
     [SerializeField] PlayerState state;
     [SerializeField] Transform carPosition;
     [SerializeField] CapsuleCollider collision;
+    [SerializeField] Rigidbody rb;
     [SerializeField] SkinnedMeshRenderer render;
     [SerializeField] bool isDriving = false;
 
-    private PlayerState previousState; // Biến lưu trạng thái trước đó
+    [SerializeField] private PlayerState previousState; // Biến lưu trạng thái trước đó
 
     void Start()
     {
@@ -51,15 +52,21 @@ public class PlayerScript : MonoBehaviour
             {
                 render.enabled = false;
                 collision.enabled = false;
+                
+                this.transform.SetParent(carPosition);
+
+                rb.isKinematic = true;
+                this.transform.position = carPosition.position;
             }
             else if (state == PlayerState.Outside)
             {
                 render.enabled = true;
                 collision.enabled = true;
-                this.transform.position = 
-                                        new Vector3(    carPosition.position.x + 1.5f, 
-                                                        carPosition.position.y, 
-                                                        carPosition.position.z);
+
+                this.transform.SetParent(null);
+                
+                rb.isKinematic = false;
+                this.transform.position = new Vector3(carPosition.position.x + 1.5f, carPosition.position.y, carPosition.position.z);
             }
 
             previousState = state;
