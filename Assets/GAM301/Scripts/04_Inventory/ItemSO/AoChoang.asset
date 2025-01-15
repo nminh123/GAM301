@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d5595e760f4334fb27af033955cd3b, type: 3}
   m_Name: AoChoang
   m_EditorClassIdentifier: 
-  Id: 0
-  nameItem: Fire
+  Id: 2
+  nameItem: AoChoang
   description: 
   itemIcon: {fileID: 21300000, guid: 6b6a1ec666976824a843ab0cba0cfcaa, type: 3}

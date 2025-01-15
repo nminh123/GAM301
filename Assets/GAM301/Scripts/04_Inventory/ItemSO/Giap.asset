@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d5595e760f4334fb27af033955cd3b, type: 3}
   m_Name: Giap
   m_EditorClassIdentifier: 
-  Id: 0
-  nameItem: Fire
+  Id: 1
+  nameItem: Giap
   description: 
   itemIcon: {fileID: 21300000, guid: e49632776de7f0a4482a78059933c8ed, type: 3}
