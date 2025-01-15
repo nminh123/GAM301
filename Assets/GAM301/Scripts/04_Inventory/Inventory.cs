@@ -17,10 +17,6 @@ public class Inventory : MonoBehaviour
 
         itemSlot = inventorySlots.GetComponentsInChildren<ItemSlot>();
     }
-    private void Update()
-    {
-        Application.targetFrameRate = 60;
-    }
     public void AddItem(ItemSO _item)
     {
         if(inventoryDic.TryGetValue(_item, out InventoryItem value))
@@ -31,6 +27,7 @@ public class Inventory : MonoBehaviour
             inventory.Add(newItem);
             inventoryDic.Add(_item, newItem);
         }
+        UpdateSlotsUI();
     }
     public void RemoveItem(ItemSO _item)
     {
