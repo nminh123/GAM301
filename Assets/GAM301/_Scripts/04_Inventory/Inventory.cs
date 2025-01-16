@@ -10,13 +10,14 @@ public class Inventory : MonoBehaviour
     [Header("Inventory UI")]
     [SerializeField] private Transform inventorySlots;
     private ItemSlot[] itemSlot;
+    public GameObject UI;
     private void Start()
     {     
         inventory = new();
         inventoryDic = new();
 
         itemSlot = inventorySlots.GetComponentsInChildren<ItemSlot>();
-        this.gameObject.SetActive(false);
+        UI.gameObject.SetActive(false);
     }
     public void AddItem(ItemSO _item)
     {
@@ -61,8 +62,8 @@ public class Inventory : MonoBehaviour
     public void IsOpen(bool _isOpen)
     {
         if (_isOpen)
-            this.gameObject.SetActive(true);
+            UI.gameObject.SetActive(true);
         else
-            this.gameObject.SetActive(false);
+            UI.gameObject.SetActive(false);
     }
 }
