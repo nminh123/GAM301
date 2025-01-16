@@ -14,7 +14,7 @@ public class DayNightCycle : MonoBehaviour
     public int startMonth = 1;
 
     [Header("Season Settings")]
-    public Image seasonIcon; // Icon để hiển thị mùa
+    public Image seasonIcon; 
     public Sprite springIcon, summerIcon, autumnIcon, winterIcon;
 
     [Header("Skybox Settings")]
@@ -23,10 +23,10 @@ public class DayNightCycle : MonoBehaviour
     public Material autumnSkybox;
     public Material winterSkybox;
     public Material nightSkybox;
-    public Material rainSkybox; // Skybox khi trời mưa
+    public Material rainSkybox;
 
     [Header("Daytime Color Settings")]
-    public Gradient dayCycleColor; // Gradient duy nhất cho cả ngày
+    public Gradient dayCycleColor;
 
     [Header("Light Settings")]
     [Range(0f, 2f)] public float minIntensity = 0.25f;
@@ -43,10 +43,8 @@ public class DayNightCycle : MonoBehaviour
     public float minRainDurationInMinutes = 5f; // Độ dài mưa tối thiểu
     public float maxRainDurationInMinutes = 15f; // Độ dài mưa tối đa
     private float rainTimer;
-    private float weatherCheckIntervalInHours = 6f;
-    private float nextWeatherCheckTime;
+    private float lastWeatherCheckTime = 0f;
 
-    // Các biến đã có của bạn giữ nguyên
     private float timeMultiplier;
     private float currentTimeOfDay;
     private int day;
@@ -60,7 +58,6 @@ public class DayNightCycle : MonoBehaviour
         timeMultiplier = 1440f / (dayLengthInMinutes * 60f);
         currentTimeOfDay = 6f; // Bắt đầu lúc 6 giờ sáng
         targetIntensity = maxIntensity;
-        nextWeatherCheckTime = weatherCheckIntervalInHours; // Đặt thời gian kiểm tra thời tiết đầu tiên
 
         UpdateSeason();
     }
@@ -85,11 +82,12 @@ public class DayNightCycle : MonoBehaviour
             day++;
         }
 
-        if (currentTimeOfDay >= nextWeatherCheckTime)
+        if ((currentTimeOfDay - lastWeatherCheckTime + 24f) % 24f >= 6f)
         {
             CheckWeather();
-            nextWeatherCheckTime += weatherCheckIntervalInHours;
+            lastWeatherCheckTime = currentTimeOfDay;
         }
+
     }
 
     private void UpdateSunPosition()
@@ -161,7 +159,7 @@ public class DayNightCycle : MonoBehaviour
         float timePercentage = currentTimeOfDay / 24f;
         sunLight.color = dayCycleColor.Evaluate(timePercentage);
 
-        if (currentTimeOfDay >= 5f && currentTimeOfDay < 19.20f) // Ban ngày
+        if (currentTimeOfDay >= 5f && currentTimeOfDay < 19.20f) 
         {
             if (isRaining && rainSkybox != null)
             {
@@ -169,7 +167,7 @@ public class DayNightCycle : MonoBehaviour
             }
             else if (isSnowing && rainSkybox != null)
             {
-                RenderSettings.skybox = rainSkybox; // Skybox mưa cho tuyết
+                RenderSettings.skybox = rainSkybox;
             }
             else
             {
@@ -183,7 +181,7 @@ public class DayNightCycle : MonoBehaviour
                     RenderSettings.skybox = winterSkybox;
             }
         }
-        else // Ban đêm
+        else 
         {
             RenderSettings.skybox = isRaining || isSnowing ? rainSkybox : nightSkybox;
         }
@@ -192,10 +190,11 @@ public class DayNightCycle : MonoBehaviour
     private void CheckWeather()
     {
         float chance = Random.value;
-        if (month >= 12 || month <= 2) // Mùa đông
+        Debug.Log("Chance value: " + chance);
+        if (month >= 12 || month <= 2) 
         {
             isSnowing = chance < snowChance;
-            isRaining = false; // Không có mưa vào mùa đông
+            isRaining = false;
         }
         else
         {
@@ -207,6 +206,11 @@ public class DayNightCycle : MonoBehaviour
         {
             float rainDuration = Random.Range(minRainDurationInMinutes, maxRainDurationInMinutes);
             rainTimer = rainDuration * 60f;
+            Debug.Log((isRaining ? "Mưa" : "Tuyết") + $" bắt đầu! Thời gian kéo dài: {rainDuration:F2} phút.");
+        }
+        else
+        {
+            rainTimer = 0f;
         }
     }
 

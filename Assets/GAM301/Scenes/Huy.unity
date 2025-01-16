@@ -40051,13 +40051,13 @@ MonoBehaviour:
   startMonth: 3
   seasonIcon: {fileID: 434211520}
   springIcon: {fileID: 21300000, guid: f75e2b1809ad796469251378de80ccb1, type: 3}
-  summerIcon: {fileID: 0}
-  autumnIcon: {fileID: 0}
-  winterIcon: {fileID: 0}
+  summerIcon: {fileID: 21300000, guid: fb1e48043961d8f44948225f539a83bb, type: 3}
+  autumnIcon: {fileID: 21300000, guid: 9f69b220176e6964fbd87f5f158d45e3, type: 3}
+  winterIcon: {fileID: 21300000, guid: 3f7035d4263aa1a4b968754d4753d5b5, type: 3}
   springSkybox: {fileID: 2100000, guid: e2925c0566b677b4aac6433b18582550, type: 2}
-  summerSkybox: {fileID: 0}
-  autumnSkybox: {fileID: 0}
-  winterSkybox: {fileID: 0}
+  summerSkybox: {fileID: 2100000, guid: e2925c0566b677b4aac6433b18582550, type: 2}
+  autumnSkybox: {fileID: 2100000, guid: e2925c0566b677b4aac6433b18582550, type: 2}
+  winterSkybox: {fileID: 2100000, guid: e2925c0566b677b4aac6433b18582550, type: 2}
   nightSkybox: {fileID: 2100000, guid: 5773743ea690ddd47a2a4742da8c9ec8, type: 2}
   rainSkybox: {fileID: 2100000, guid: e09f982bd30e46a43bfd67ad15bd2776, type: 2}
   dayCycleColor:
@@ -40097,7 +40097,7 @@ MonoBehaviour:
   snowParticle: {fileID: 1308041914}
   isRaining: 0
   isSnowing: 0
-  rainChance: 0.9
+  rainChance: 0.5
   snowChance: 0.2
   minRainDurationInMinutes: 0.01
   maxRainDurationInMinutes: 0.02
