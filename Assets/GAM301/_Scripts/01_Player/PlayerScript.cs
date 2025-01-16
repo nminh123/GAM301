@@ -9,19 +9,19 @@ public class PlayerScript : MonoBehaviour
         GoToTrunk
     }
 
-    [SerializeField] PlayerState state;
-    [SerializeField] Transform carPosition;
-    [SerializeField] CapsuleCollider collision;
-    [SerializeField] Rigidbody rb;
-    [SerializeField] SkinnedMeshRenderer render;
-    [SerializeField] bool isDriving = false;
-
-    [SerializeField] private PlayerState previousState; // Biến lưu trạng thái trước đó
+    [SerializeField] public PlayerState state;
+    [SerializeField] private Transform carTransform;
+    [SerializeField] private CapsuleCollider collision;
+    [SerializeField] private Rigidbody rb;
+    [SerializeField] private SkinnedMeshRenderer render;
+    [SerializeField] private bool isDriving = false;
+    // [SerializeField] private Transform spoilerTransform;
+    [SerializeField] private PlayerState previousState;
 
     void Start()
     {
         state = PlayerState.Outside;
-        previousState = state; // Khởi tạo trạng thái trước đó
+        previousState = state;
     }
 
     void Update()
@@ -52,11 +52,11 @@ public class PlayerScript : MonoBehaviour
             {
                 render.enabled = false;
                 collision.enabled = false;
-                
-                this.transform.SetParent(carPosition);
+
+                this.transform.SetParent(carTransform);
 
                 rb.isKinematic = true;
-                this.transform.position = carPosition.position;
+                this.transform.position = carTransform.position;
             }
             else if (state == PlayerState.Outside)
             {
@@ -64,9 +64,9 @@ public class PlayerScript : MonoBehaviour
                 collision.enabled = true;
 
                 this.transform.SetParent(null);
-                
+
                 rb.isKinematic = false;
-                this.transform.position = new Vector3(carPosition.position.x + 1.5f, carPosition.position.y, carPosition.position.z);
+                this.transform.position = new Vector3(carTransform.position.x + 1.5f, carTransform.position.y, carTransform.position.z);
             }
 
             previousState = state;
@@ -75,16 +75,11 @@ public class PlayerScript : MonoBehaviour
 
     public float GetCarDistance()
     {
-        return Vector3.Distance(this.transform.position, carPosition.position);
+        return Vector3.Distance(this.transform.position, carTransform.position);
     }
 
     public bool IsDriving()
     {
         return isDriving;
-    }
-
-    public PlayerState GetState()
-    {
-        return state;
     }
 }
