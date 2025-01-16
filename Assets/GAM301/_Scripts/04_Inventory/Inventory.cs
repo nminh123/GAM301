@@ -16,6 +16,7 @@ public class Inventory : MonoBehaviour
         inventoryDic = new();
 
         itemSlot = inventorySlots.GetComponentsInChildren<ItemSlot>();
+        this.gameObject.SetActive(false);
     }
     public void AddItem(ItemSO _item)
     {
@@ -55,5 +56,13 @@ public class Inventory : MonoBehaviour
         {
             itemSlot[i].UpdateSlot(inventory[i]);
         }
+    }
+
+    public void IsOpen(bool _isOpen)
+    {
+        if (_isOpen)
+            this.gameObject.SetActive(true);
+        else
+            this.gameObject.SetActive(false);
     }
 }
