@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d5595e760f4334fb27af033955cd3b, type: 3}
   m_Name: ThangXang
   m_EditorClassIdentifier: 
-  Id: 0
-  nameItem: Fire
+  Id: 6
+  nameItem: ThangXang
   description: 
-  itemIcon: {fileID: 21300000, guid: 9f69b220176e6964fbd87f5f158d45e3, type: 3}
+  itemIcon: {fileID: -898649905, guid: 3ceb0e845931dc24ead881b672c6bb04, type: 3}

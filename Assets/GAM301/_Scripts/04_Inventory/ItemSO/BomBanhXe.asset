@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d5595e760f4334fb27af033955cd3b, type: 3}
   m_Name: BomBanhXe
   m_EditorClassIdentifier: 
-  Id: 2
-  nameItem: xang
+  Id: 3
+  nameItem: BomBanhXe
   description: 
-  itemIcon: {fileID: 21300000, guid: 6b6a1ec666976824a843ab0cba0cfcaa, type: 3}
+  itemIcon: {fileID: -1499324951, guid: 3ceb0e845931dc24ead881b672c6bb04, type: 3}

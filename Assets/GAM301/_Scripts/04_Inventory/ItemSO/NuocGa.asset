@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03d5595e760f4334fb27af033955cd3b, type: 3}
   m_Name: NuocGa
   m_EditorClassIdentifier: 
-  Id: 1
-  nameItem: Giap
+  Id: 5
+  nameItem: NuocGa
   description: 
-  itemIcon: {fileID: 21300000, guid: e49632776de7f0a4482a78059933c8ed, type: 3}
+  itemIcon: {fileID: -620410664, guid: 3ceb0e845931dc24ead881b672c6bb04, type: 3}
