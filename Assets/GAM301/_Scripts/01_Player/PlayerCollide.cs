@@ -6,17 +6,19 @@ public class PlayerCollide : MonoBehaviour
 
     void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.CompareTag("Spoiler"))
+        if (other.gameObject.CompareTag("Spoiler"))
         {
             script.state = PlayerScript.PlayerState.GoToTrunk;
+            GameManager.Instance.inventoryManager.IsOpen(true);
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if(other.gameObject.CompareTag("Spoiler"))
+        if (other.gameObject.CompareTag("Spoiler"))
         {
             script.state = PlayerScript.PlayerState.Outside;
+            GameManager.Instance.inventoryManager.IsOpen(false);
         }
     }
 }
