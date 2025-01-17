@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.043206055, g: 0.053897772, b: 0.07494444, a: 1}
+  m_IndirectSpecularColor: {r: 0.043205954, g: 0.053897653, b: 0.07494408, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -22832,6 +22832,7 @@ MonoBehaviour:
   moneyManager: {fileID: 806017773}
   inventoryManager: {fileID: 1463458241}
   soundManager: {fileID: 1605900416}
+  toolTipManager: {fileID: 0}
 --- !u!1001 &758420302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24425,7 +24426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1339158785}
-  motorForce: 10000
+  maxSpeed: 5000
   breakForce: 3000
   maxSteerAngle: 30
   frontLeftWheelCollider: {fileID: 1851814251}
