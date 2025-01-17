@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-128,-256)">
+        <g>
+            <g id="Sonne-mit-Bodennebel" serif:id="Sonne mit Bodennebel">
+            </g>
+            <g id="Sonne--leicht-bewölkt" serif:id="Sonne, leicht bewölkt">
+            </g>
+            <g transform="matrix(1,0,0,1,0,128.334)">
+                <g transform="matrix(1,-0,-0,1,128,127.666)">
+                </g>
+            </g>
+            <g transform="matrix(1,0,0,1,-0.477604,191.028)">
+                <g id="Sonne-mit-leichtem-Gewitter-und-Regen" serif:id="Sonne mit leichtem Gewitter und Regen">
+                    <g id="Sonne--leicht-bewölkt1" serif:id="Sonne, leicht bewölkt">
+                    </g>
+                </g>
+            </g>
+            <g id="Sonne-stark-bewölkt" serif:id="Sonne stark bewölkt">
+            </g>
+            <g id="Regen">
+            </g>
+            <g id="Regen1" serif:id="Regen">
+            </g>
+            <g id="Schnee">
+            </g>
+            <g id="Regen2" serif:id="Regen">
+            </g>
+            <g id="leichtes-Gewitter" serif:id="leichtes Gewitter">
+            </g>
+            <g id="leichtes-Gewitter1" serif:id="leichtes Gewitter" transform="matrix(1,0,0,1,-64.5959,185.531)">
+                <g id="Wolke" transform="matrix(1,-0,-0,1,192.596,70.4688)">
+                    <use xlink:href="#_Image1" x="8.326" y="10.157" width="47.516px" height="44.095px" transform="matrix(0.989909,0,0,0.979884,0,0)"/>
+                </g>
+            </g>
+        </g>
+        <g id="Bewölkt">
+        </g>
+        <g id="starker-Schnee" serif:id="starker Schnee">
+        </g>
+        <g id="Hagel">
+        </g>
+        <g id="starker-Hagel" serif:id="starker Hagel">
+        </g>
+        <g id="stark-bewölkt-mit-Gewitter" serif:id="stark bewölkt mit Gewitter">
+        </g>
+        <g id="stark-bewölkt-mit-Gewitter1" serif:id="stark bewölkt mit Gewitter">
+        </g>
+        <g id="Bewölkt1" serif:id="Bewölkt">
+        </g>
+        <g id="Bewölkt2" serif:id="Bewölkt">
+        </g>
+        <g id="stark-bewölkt-mit-Gewitter2" serif:id="stark bewölkt mit Gewitter">
+        </g>
+        <g id="Nebel">
+        </g>
+        <g id="Fahne-Bft.-9" serif:id="Fahne Bft. 9">
+        </g>
+        <g id="Fahne-Bft.-8" serif:id="Fahne Bft. 8">
+        </g>
+        <g id="Fahne-Bft.-7" serif:id="Fahne Bft. 7">
+        </g>
+        <g id="Fahne-Bft.-6" serif:id="Fahne Bft. 6">
+        </g>
+        <g id="Fahne-Bft.-5" serif:id="Fahne Bft. 5">
+        </g>
+        <g id="Fahne-Bft.--5" serif:id="Fahne Bft. &lt;5">
+        </g>
+        <g id="Sonnenuntergang">
+        </g>
+        <g id="Sonnenuntergang1" serif:id="Sonnenuntergang">
+        </g>
+        <g id="Mond">
+        </g>
+        <g id="Mond-bewölkt" serif:id="Mond bewölkt">
+        </g>
+        <g id="Mond-stark-bewölkt" serif:id="Mond stark bewölkt">
+        </g>
+        <g id="Thermometer-Heiss" serif:id="Thermometer Heiss">
+        </g>
+        <g id="Thermometer-Mittel" serif:id="Thermometer Mittel">
+        </g>
+        <g id="Thermometer-kalt" serif:id="Thermometer kalt">
+        </g>
+        <g id="Norden">
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="48px" height="45px" xlink:href="data:image/png;base64,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"/>
+    </defs>
+</svg>

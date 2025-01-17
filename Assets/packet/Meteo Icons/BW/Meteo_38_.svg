@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(1,0,0,1,-448,-128)">
+        <g>
+            <g id="Sonne--leicht-bewölkt" serif:id="Sonne, leicht bewölkt">
+            </g>
+            <g id="Sonne-mit-leichtem-Gewitter" serif:id="Sonne mit leichtem Gewitter">
+            </g>
+            <g id="Sonne-mit-leichtem-Gewitter-und-Regen" serif:id="Sonne mit leichtem Gewitter und Regen">
+            </g>
+            <g id="Sonne-stark-bewölkt" serif:id="Sonne stark bewölkt">
+            </g>
+            <g id="Regen">
+            </g>
+            <g id="Regen1" serif:id="Regen">
+            </g>
+            <g id="Schnee">
+            </g>
+            <g id="Regen2" serif:id="Regen">
+            </g>
+            <g id="leichtes-Gewitter" serif:id="leichtes Gewitter">
+            </g>
+            <g id="Bewölkt">
+            </g>
+            <g id="starker-Schnee" serif:id="starker Schnee">
+            </g>
+            <g id="Hagel">
+            </g>
+            <g id="starker-Hagel" serif:id="starker Hagel">
+            </g>
+            <g id="stark-bewölkt-mit-Gewitter" serif:id="stark bewölkt mit Gewitter">
+            </g>
+            <g id="stark-bewölkt-mit-Gewitter1" serif:id="stark bewölkt mit Gewitter">
+            </g>
+            <g id="Bewölkt1" serif:id="Bewölkt">
+            </g>
+            <g id="Bewölkt2" serif:id="Bewölkt">
+            </g>
+            <g id="stark-bewölkt-mit-Gewitter2" serif:id="stark bewölkt mit Gewitter">
+            </g>
+            <g id="Nebel">
+            </g>
+            <g id="Sonnenuntergang">
+            </g>
+            <g id="Sonnenuntergang1" serif:id="Sonnenuntergang">
+            </g>
+            <g id="Mond">
+            </g>
+            <g id="Mond-bewölkt" serif:id="Mond bewölkt">
+                <g id="Mond1" serif:id="Mond" transform="matrix(1,0,0,1,-1.00055,65.3171)">
+                    <g transform="matrix(1,-0,-0,1,449.001,62.6829)">
+                        <use xlink:href="#_Image1" x="30.212" y="3.561" width="30.669px" height="37.258px" transform="matrix(0.989311,0,0,0.980465,0,0)"/>
+                    </g>
+                    <g transform="matrix(1,0,0,1,1.84564,-1.64091)">
+                        <g id="Floke" transform="matrix(1,-0,-0,1,447.155,64.3238)">
+                            <use xlink:href="#_Image2" x="18.202" y="10.738" width="14.5px" height="14.5px" transform="matrix(0.966667,0,0,0.966667,0,0)"/>
+                        </g>
+                        <g transform="matrix(0.666402,0,0,0.711453,162.946,17.7328)">
+                            <ellipse cx="463.765" cy="90.268" rx="2.402" ry="2.268" style="fill:none;stroke:black;stroke-width:3.63px;"/>
+                        </g>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-12.3075,32.7286)">
+                        <g id="Floke1" serif:id="Floke" transform="matrix(1,-0,-0,1,461.308,29.9543)">
+                            <use xlink:href="#_Image2" x="3.561" y="46.293" width="14.5px" height="14.5px" transform="matrix(0.966667,0,0,0.966667,0,0)"/>
+                        </g>
+                        <g transform="matrix(0.666402,0,0,0.711453,162.946,17.7328)">
+                            <ellipse cx="463.765" cy="90.268" rx="2.402" ry="2.268" style="fill:none;stroke:black;stroke-width:3.63px;"/>
+                        </g>
+                    </g>
+                    <g transform="matrix(1,-0,-0,1,449.001,62.6829)">
+                        <use xlink:href="#_Image3" x="25.249" y="46.25" width="9px" height="9px"/>
+                    </g>
+                    <g transform="matrix(1,-0,-0,1,449.001,62.6829)">
+                        <use xlink:href="#_Image3" x="49.249" y="41.614" width="9px" height="9px"/>
+                    </g>
+                    <g transform="matrix(1,-0,-0,1,449.001,62.6829)">
+                        <use xlink:href="#_Image3" x="11.749" y="28.817" width="9px" height="9px"/>
+                    </g>
+                    <g transform="matrix(1,-0,-0,1,449.001,62.6829)">
+                        <use xlink:href="#_Image3" x="3.749" y="6.067" width="9px" height="9px"/>
+                    </g>
+                </g>
+                <g id="Wolke" transform="matrix(1,-0,-0,1,448,128)">
+                    <use xlink:href="#_Image4" x="8.326" y="25.082" width="47.516px" height="31.157px" transform="matrix(0.989909,0,0,0.973661,0,0)"/>
+                </g>
+            </g>
+        </g>
+        <g id="Mond-stark-bewölkt" serif:id="Mond stark bewölkt">
+        </g>
+        <g id="Thermometer-Heiss" serif:id="Thermometer Heiss">
+        </g>
+        <g id="Thermometer-Mittel" serif:id="Thermometer Mittel">
+        </g>
+        <g id="Thermometer-kalt" serif:id="Thermometer kalt">
+        </g>
+        <g id="Norden">
+        </g>
+    </g>
+    <defs>
+        <image id="_Image1" width="31px" height="38px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAmCAYAAAA820BcAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE0klEQVRYhb2XX0hUeRTHv9OouaKFjmH2xxldcJOGfagoU1gNgjBlyURZdt3aIvYhCoKIEmKDLRB9EoSELfJlQ4hdw1lC3Ioslmlbq4eoINtoNEmNZrKiMeTe+9mHnFvjjO6ujh34we93OPd8vufMmftHmoUB3wB/ACGgE6ifTZ7ZgDdalsXBgwepqKigqamJhw8fAowBjYBzPuG77t+/j6SotWXLFvr6+gCGgR/mC15imibLly+PESCJbdu2MTAwAPA7sHg+BPw2NDTEkiVL4grIzs7mypUrAH1A8XwI6PH7/aSkpNjQiooKe+90Ojl58iTAbeCzRMNTgT+PHz9uA5uammhpacHpdNq+jo4OAD+QnGgBleFwGLfbjSQyMjIIBoNcvnyZtLQ0JJGamsqNGzcALiQUPingfEdHh13pmTNnAOjs7LR9ubm5jI2NAdQlGl4+Pj5Oeno6kqiqqiJiJ06csAUcOXIEwJ9Q+KSAgbq6OiSxcOFCXr16BYBhGHi9Xrv9g4ODALsTDW/5sPU+n8+uvru72/bv27cPoC/R8N337t2zIadPn7bhlmWxYcMGJLF06VJM0wQokaQFCeKH09LS3h/CYXvvcDhUV/duzkZGRuT3+yXp48Alqaamxt77fD5J+vKjwd1ut/Ly8iRJ/f39klSYSPjily9f2ocFC2LTejweSVIgEJCkHOCTRMG/uHbtmn0oLo59lkyBS5InUfDy3t5eSZLT6VRJSUlMQHLyu1u7ZVkRV5z+/E8DMiV9fvXqVUnS2rVrlZGRERMXCoUkSS6XK+IKJqLyspGRET148ECSVF5eHjcoGAxKkrKysmw9iYDvPXfu3HslZWUxAYZh6M6dO5KklStXStKow+GYmBMVqB0bGyM7O9t+er1584ap5vf77btfa2srwM9zAk/C/Q0NDXbiU6dOxYABjh07Zsf09/cDfDtXcMPg4CCpqalIwuv1YhhGDDgcDrNs2TIkUVBQgGVZABvnAt5rmia1tbV2Rd3d3XGrbmlpmdryX+YCPmCaJnv27LGTbt68OVJRlIVCIXJycpDEihUrGB8fByifLfhHwzDYsWOHDc7Ly+Px48cxYMMwot5mJ99kfbOB7gL+evToEVVVVXbCgoICAoFA3HYfPXo0qjOT81A6E+RToASoBg4AvwLhZ8+esX//fpKTk+2EhYWFPHnyJAZqmiaHDh2y49xuN8+fPwdong5aBPRELn769CnXr1+nubmZTZs2kZSUFPVFUllZyfDwcAz4xYsXVFdX23GLFi3i1q1bAOdnqvins2fPTvv5E1nr16+nt7c3BjoxMUFraysul8uO9Xg83L17F6AXcEwHTgJYt25dXKDL5WLnzp10dXVFTbRlWdy8eZPDhw/j8XiiriktLWV0dBSgc9qKP6z84sWLceHp6ekUFxezdetW6uvr2b59O2vWrCEzMzMmNjc3l/b29shwtf4reBLuAm6/ffuWtrY2ioqKZmz/1OX1emlsbOT169cAF2ac6g8s6rcAyiR9L+nrQCCgnp4eXbp0SUNDQwqFQgoGg0pJSVF+fr7y8/O1evVqVVdXa9WqVZLUJanN4XD0/KeKZ+jEYuAroB2I/T+BCfwNdAHfAemz4cSfwviCsiS5JE04HI6B2cCm2j9ibIkZimCB1AAAAABJRU5ErkJggg=="/>
+        <image id="_Image2" width="15px" height="15px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABFklEQVQokZWSQW7CMBREnylKpHoFl0AoWXrlXKRXqLrhCBwhu3ACUskHQr1EuwpSItTpgjiCqEnLSN54PPbM+MMMJK3n+CnRRlKtK2pJm0fEhxCCsixTCEGSqv8KnyTJey9ARVH0BrQYn12MhUAC0HUdAG3bRjrt+Xtxn/EAXIDzhKkzcJF0uOtAUh1CkPdezjk552StFSBr7bDnvY8dHKNwLUlZlgn4c+V5HjtYLY0xn5Le9/v9S1mWQ8bT6UTTNFhr2W6319Bpym63A6iNMV/x9Y2kSjdwzgmQc04jVDHzEsAY8wG8SnoD0onSnoHWGPP961f1RAeQJMlgtcedcBJxwvI8f2zCbjo49hmPD832zSWrOf4HKI/z33/ElYMAAAAASUVORK5CYII="/>
+        <image id="_Image3" width="9px" height="9px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAfElEQVQYlWWOsRHDMAwDqbQagIUGyArSFOQ49rqW03CJTxElsSXcoQH+DhCZBDzn7FruQOejDuwLEBGYGTlnzIyIANiuUDczRORndwc4vkABUNUbpKpjmfJIKb1E5Ky13i601kRE+uj/n9wdVcXd108D3IBjTBwLMMFlzt5zHHmd12YD6gAAAABJRU5ErkJggg=="/>
+        <image id="_Image4" width="48px" height="32px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAgCAYAAABU1PscAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE/UlEQVRYhcWYX0iVZxzHv88xjskWhjcHmcliqTsaybyItAmJYkOQUk40rYvWhTmyETnaTRvbzcBzUdDWuQmCwIks/LegzXKBnK21C7Xm/zShQ2NwKD3YQDzE+9mFnnce045HTb/wch6e93l+7+f3O7/nr7RBAt4BUtfbrllvgxEBxyVVS3pfUrqkhPlXIUlDkgYlPZTUa4z5Y7XfWVcHgHxJFZI+HR8ff7upqUkjIyMKBAIKBAJyOBxyu93Kzs5WTk6OcnNzlZeXJ2OMT1KdMYb15IkX/jPLsmhra6OkpARJK3ry8/Pp6ekBeAjUvmnIZKAIKACSF9Q3hMNhTpw4sWLwhY8xhpqaGoLBIMDP8TDFTCGgXFKppEJJuTMzM0pMTJTD4ZCk+5J+mZ6e/trj8ejOnTtRfQsLC1VRUaGdO3cqPT1d4XBYQ0NDGhwcVH9/v7q6ugT/Z43L5ZLf71dGRkazMaYqHkeWAs8Hfg8GgzQ2NnLq1CncbjeSSExMxO12c/bsWSYnJzl06FBURMvLyxkcHCSWenp6KCgoiOqblZVFKBQC+Hgt8F9YlsXVq1dJSkqKKx3OnDnDy5cvY8JHZFkW165dIyEhwbZx/vx5gO7VwjeHQiGOHj0ady6XlpZiWdaK4Rfq4sWLtp3k5GRevHgBUBIvfN2zZ8/IzMyMAtuxYwfnzp2jvb2dYDBIIBDg8uXLUVGTRFdX16rgAWZnZ0lNTbVtdXR0AHwbD/w2YPDkyZNRUB6Ph6mpqSU/ev36dbvd3r17Vx39iKqrq217ly5dAmiOx4Efuru7o+AbGhpiQrW0tFBfX8/Tp0/XBA9QX1+/eBxYwL/Ad8wtksvCF4bDYXuWkURRUdGaIxqvjhw58soiV1xcTGNjY4Tl++Uc+PL27dt2R6fTycjIyIbCA+Tl5S07QRQUFPDgwQMA/0J2x/xvXm9vr11ZWVmprKysFaffeik3N3fZd/fu3dP+/fv16NGjD4Gvol4CE1VVVba3Xq93w6MPMDMzQ0dHB01NTbS2tnLr1i1qamqY3+QhicOHDwP8A7wVgU8GovK/s7NzUxxYTjdv3oxKJ7/fD/B5xIFcIGrFffz48aYCL6WysjKbr7a2FqBPmhsDAUlKT0+3U+rJkydrzuf11rFjx+zy6OioJGVJksMYMyXp7927d9sNBgYGNhgvtjIzM+3y2NiYJCUBaZFZaGChA/39/RsKtxKlpKTY5cnJSbs64sBfe/bssRu0tLQoFAptGNxKNDw8bJczMjIixbGIA50HDx6Uy+WSNOeh1+vdUMBY6uvrs8vzwR4zxszYlcDPPp/PHulJSUnrsr9ZD4VCIVwu1+s3eszvh3bt2mU3zM7OJhAIbCq8ZVmcPn3aZkpJSeH58+cAZa/8TcCPra2tUYtGWloaAwMDmwI/OzvL4u39lStXALoizGaRA+9KavX5fB/U1dXZB+6EhAQdOHBAlZWVKi4u1tatW1eVxyvV+Pi47t69q+bmZk1MTNj1+/btk9/v15YtWwqNMb8t2Zm5w3zPjRs3cDqdq7omeRNPeXk509PTAL6YEQDeA+53d3eTk5OzqeBOp5MLFy5ELgq+Wcy67L0QsE2ST9Lx4eFhtbW1qb29PbIKvlE5HA4B8nq98ng82r59+5+SvMaY1riNMXdW/gT4acNHMfwKfPQ6vrgud4EESRkxG65dliRjjBmN1fA/Lqo3WUJqfDkAAAAASUVORK5CYII="/>
+    </defs>
+</svg>
