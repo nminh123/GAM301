@@ -16,10 +16,12 @@ public class GameManager : MonoBehaviour
     public MoneyManager moneyManager;
     public Inventory inventoryManager;
     public SoundManager soundManager;
+    public ToolTipManager toolTipManager;
     private void Reset()
     {
         moneyManager = GetComponentInChildren<MoneyManager>();
         inventoryManager = GetComponentInChildren<Inventory>();
         soundManager = GetComponentInChildren<SoundManager>();
+        toolTipManager = GetComponentInChildren<ToolTipManager>();
     }
 }
