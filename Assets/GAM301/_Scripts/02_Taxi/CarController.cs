@@ -53,7 +53,14 @@ public class CarController : MonoBehaviour
 
     private void HandleMotor()
     {
-        if (player.IsDriving() == true)
+        if (!player.IsDriving())
+        {
+            frontLeftWheelCollider.motorTorque = 0f;
+            frontRightWheelCollider.motorTorque = 0f;
+            ApplyBreaking(); // Đảm bảo xe dừng lại
+            return;
+        }
+        else if (player.IsDriving() == true)
         {
             // Kiểm tra đầu vào tăng tốc
             if (Input.GetKey(KeyCode.W))
@@ -67,7 +74,7 @@ public class CarController : MonoBehaviour
             else if (Input.GetKeyDown(KeyCode.Space))
             {
                 currentSpeed -= deceleration * Time.deltaTime;
-                if(currentSpeed < 100f)
+                if (currentSpeed < 100f)
                 {
                     currentSpeed = 0f;
                 }
@@ -81,12 +88,18 @@ public class CarController : MonoBehaviour
             frontRightWheelCollider.motorTorque = currentSpeed;
             currentbreakForce = isBreaking ? breakForce : 0f;
             ApplyBreaking();
+
             Debug.Log($"Current Speed: {currentSpeed}");
         }
     }
 
     private void ApplyBreaking()
     {
+        if (!player.IsDriving())
+        {
+            currentbreakForce = breakForce; // Áp dụng lực phanh tối đa
+        }
+
         frontRightWheelCollider.brakeTorque = currentbreakForce;
         frontLeftWheelCollider.brakeTorque = currentbreakForce;
         rearLeftWheelCollider.brakeTorque = currentbreakForce;
@@ -95,6 +108,14 @@ public class CarController : MonoBehaviour
 
     private void HandleSteering()
     {
+        if (!player.IsDriving())
+        {
+            // Đặt góc lái về 0 khi không lái
+            frontLeftWheelCollider.steerAngle = 0f;
+            frontRightWheelCollider.steerAngle = 0f;
+            return;
+        }
+
         currentSteerAngle = maxSteerAngle * horizontalInput;
         frontLeftWheelCollider.steerAngle = currentSteerAngle;
         frontRightWheelCollider.steerAngle = currentSteerAngle;
