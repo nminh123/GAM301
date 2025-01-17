@@ -5,11 +5,12 @@ public class CarController : MonoBehaviour
     private float horizontalInput, verticalInput;
     private float currentSteerAngle, currentbreakForce;
     private bool isBreaking;
+    private float acceleration = 50f, deceleration = 30f, currentSpeed;
 
     [SerializeField] private PlayerScript player;
 
     // Settings
-    [SerializeField] private float motorForce, breakForce, maxSteerAngle;
+    [SerializeField] private float maxSpeed, breakForce, maxSteerAngle;
 
     // Wheel Colliders
     [SerializeField] private WheelCollider frontLeftWheelCollider, frontRightWheelCollider;
@@ -19,7 +20,7 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform frontLeftWheelTransform, frontRightWheelTransform;
     [SerializeField] private Transform rearLeftWheelTransform, rearRightWheelTransform;
 
-    
+
 
     private void FixedUpdate()
     {
@@ -31,7 +32,7 @@ public class CarController : MonoBehaviour
 
     private void GetInput()
     {
-        if(player == null)
+        if (player == null)
         {
             Debug.LogWarning("Khong tim thay player");
             return;
@@ -52,10 +53,36 @@ public class CarController : MonoBehaviour
 
     private void HandleMotor()
     {
-        frontLeftWheelCollider.motorTorque = verticalInput * motorForce;
-        frontRightWheelCollider.motorTorque = verticalInput * motorForce;
-        currentbreakForce = isBreaking ? breakForce : 0f;
-        ApplyBreaking();
+        if (player.IsDriving() == true)
+        {
+            // Kiểm tra đầu vào tăng tốc
+            if (Input.GetKey(KeyCode.W))
+            {
+                // Tăng tốc dần
+                if (currentSpeed < maxSpeed)
+                {
+                    currentSpeed += acceleration * Time.deltaTime;
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Space))
+            {
+                currentSpeed -= deceleration * Time.deltaTime;
+                if(currentSpeed < 100f)
+                {
+                    currentSpeed = 0f;
+                }
+            }
+
+            // Giới hạn tốc độ trong khoảng 0 đến maxSpeed
+            currentSpeed = Mathf.Clamp(currentSpeed, 0f, maxSpeed);
+
+            // Áp dụng lực lên WheelCollider
+            frontLeftWheelCollider.motorTorque = currentSpeed;
+            frontRightWheelCollider.motorTorque = currentSpeed;
+            currentbreakForce = isBreaking ? breakForce : 0f;
+            ApplyBreaking();
+            Debug.Log($"Current Speed: {currentSpeed}");
+        }
     }
 
     private void ApplyBreaking()
