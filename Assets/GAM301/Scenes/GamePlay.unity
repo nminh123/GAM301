@@ -469,6 +469,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 350985515}
   itemText: {fileID: 850125531}
+  count: {fileID: 0}
 --- !u!114 &13082711
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11690,6 +11691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 54756101}
   itemText: {fileID: 1819732893}
+  count: {fileID: 0}
 --- !u!114 &486379366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18473,6 +18475,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 1535677751}
   itemText: {fileID: 1348990891}
+  count: {fileID: 0}
 --- !u!114 &573225830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24426,9 +24429,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1339158785}
-  maxSpeed: 5000
-  breakForce: 3000
-  maxSteerAngle: 30
+  maxSpeed: 300
+  breakForce: 30000
+  maxSteerAngle: 20
   frontLeftWheelCollider: {fileID: 1851814251}
   frontRightWheelCollider: {fileID: 527412516}
   rearLeftWheelCollider: {fileID: 415452142}
@@ -25668,6 +25671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 768032745}
   itemText: {fileID: 2015088572}
+  count: {fileID: 0}
 --- !u!114 &871736627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28125,6 +28129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 1943391596}
   itemText: {fileID: 503667035}
+  count: {fileID: 0}
 --- !u!114 &1000281327
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30745,6 +30750,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 351119051}
   itemText: {fileID: 738524174}
+  count: {fileID: 0}
 --- !u!114 &1122078318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44009,7 +44015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7578ab467823ddc46b96f4e63febc44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dayLengthInMinutes: 0.1
+  dayLengthInMinutes: 15
   sunLight: {fileID: 1416758923}
   startDay: 1
   startMonth: 3
@@ -54534,6 +54540,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 849119441}
   itemText: {fileID: 107468493}
+  count: {fileID: 0}
 --- !u!114 &1879027054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60156,6 +60163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemIcon: {fileID: 674681694}
   itemText: {fileID: 876357306}
+  count: {fileID: 0}
 --- !u!114 &2079278620
 MonoBehaviour:
   m_ObjectHideFlags: 0
