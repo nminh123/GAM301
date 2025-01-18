@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: -2808685135715364714}
+  - component: {fileID: 2080561974739909782}
   m_Layer: 0
   m_Name: Natures_Cube Tree
   m_TagString: Untagged
@@ -84,8 +84,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &-2808685135715364714
-CapsuleCollider:
+--- !u!65 &2080561974739909782
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -101,9 +101,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.6964002
-  m_Height: 4.0276356
-  m_Direction: 1
+  m_Enabled: 0
+  serializedVersion: 3
+  m_Size: {x: 3.3928003, y: 4.0276356, z: 3.194074}
   m_Center: {x: -0.13024193, y: 2.0143924, z: 0.020219207}
