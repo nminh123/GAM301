@@ -60,37 +60,51 @@ public class CarController : MonoBehaviour
             ApplyBreaking(); // Đảm bảo xe dừng lại
             return;
         }
-        else if (player.IsDriving() == true)
+
+        // Kiểm tra đầu vào tăng tốc hoặc lùi
+        if (Input.GetKey(KeyCode.W))
         {
-            // Kiểm tra đầu vào tăng tốc
-            if (Input.GetKey(KeyCode.W))
+            // Tăng tốc tới
+            if (currentSpeed < maxSpeed)
             {
-                // Tăng tốc dần
-                if (currentSpeed < maxSpeed)
-                {
-                    currentSpeed += acceleration * Time.deltaTime;
-                }
+                currentSpeed += acceleration * Time.deltaTime;
             }
-            else if (Input.GetKeyDown(KeyCode.Space))
+        }
+        else if (Input.GetKey(KeyCode.S))
+        {
+            // Chạy lùi
+            if (currentSpeed > -maxSpeed / 2) // Giới hạn tốc độ lùi là 50% maxSpeed
+            {
+                currentSpeed -= acceleration * Time.deltaTime;
+            }
+        }
+        else
+        {
+            // Tự động giảm tốc độ nếu không nhấn W hoặc S
+            if (currentSpeed > 0f)
             {
                 currentSpeed -= deceleration * Time.deltaTime;
-                if (currentSpeed < 100f)
-                {
-                    currentSpeed = 0f;
-                }
+                currentSpeed = Mathf.Max(currentSpeed, 0f); // Đảm bảo không giảm dưới 0 khi xe đang tiến
             }
-
-            // Giới hạn tốc độ trong khoảng 0 đến maxSpeed
-            currentSpeed = Mathf.Clamp(currentSpeed, 0f, maxSpeed);
-
-            // Áp dụng lực lên WheelCollider
-            frontLeftWheelCollider.motorTorque = currentSpeed;
-            frontRightWheelCollider.motorTorque = currentSpeed;
-            currentbreakForce = isBreaking ? breakForce : 0f;
-            ApplyBreaking();
-
-            Debug.Log($"Current Speed: {currentSpeed}");
+            else if (currentSpeed < 0f)
+            {
+                currentSpeed += deceleration * Time.deltaTime;
+                currentSpeed = Mathf.Min(currentSpeed, 0f); // Đảm bảo không tăng quá 0 khi xe đang lùi
+            }
         }
+
+        // Áp dụng giới hạn tốc độ
+        currentSpeed = Mathf.Clamp(currentSpeed, -maxSpeed / 2, maxSpeed);
+
+        // Áp dụng lực lên WheelCollider
+        frontLeftWheelCollider.motorTorque = currentSpeed;
+        frontRightWheelCollider.motorTorque = currentSpeed;
+
+        // Áp dụng lực phanh
+        currentbreakForce = isBreaking ? breakForce : 0f;
+        ApplyBreaking();
+
+        Debug.Log($"Current Speed: {currentSpeed}");
     }
 
     private void ApplyBreaking()
