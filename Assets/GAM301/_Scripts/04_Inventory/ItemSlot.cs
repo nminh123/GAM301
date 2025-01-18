@@ -7,7 +7,7 @@ public class ItemSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] protected Image itemIcon;
     [SerializeField] protected TextMeshProUGUI itemText;
-
+    [SerializeField] protected Image count;
     [SerializeField] protected InventoryItem item;
 
     public void UpdateSlot(InventoryItem _newItem)
@@ -19,7 +19,10 @@ public class ItemSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         {
             itemIcon.sprite = item.itemData.itemIcon;
             if (item.stack > 1)
+            {
                 itemText.text = item.stack.ToString();
+                count.gameObject.SetActive(true);
+            }
             else
                 itemText.text = "";
         }
