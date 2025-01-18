@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5
   nameItem: NuocGa
-  description: 
+  description: Nuoc co ga la nguoi ben trong co Ga ket hop giua H20 + CO2 chung ta
+    co H2CO3 giup thoai mai khi an do an nhanh cho them 50 the luc
   itemIcon: {fileID: 185486604, guid: 4317e63293f50664b8f432af73e00386, type: 3}

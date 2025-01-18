@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1
   nameItem: BanhMochi
-  description: 
+  description: Mon gion gion can vao hoa tan trong mieng bo sung nguoi dung 20 the
+    luc
   itemIcon: {fileID: 811747923, guid: 4317e63293f50664b8f432af73e00386, type: 3}

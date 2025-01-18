@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 4
   nameItem: hamburger
-  description: 
+  description: Mot do an nhanh ai cung thich voi mieng thit beo ngay cong them rau
+    cai hoa quyen lai giup ta ta 50 the luc
   itemIcon: {fileID: -1469847302, guid: 4317e63293f50664b8f432af73e00386, type: 3}

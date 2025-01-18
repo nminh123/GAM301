@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 2
   nameItem: BinhCO2
-  description: 
+  description: Theo luat phap moi xe phai co binh chua chay tren xe
   itemIcon: {fileID: -623034687, guid: 4317e63293f50664b8f432af73e00386, type: 3}

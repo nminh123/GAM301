@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 3
   nameItem: BomBanhXe
-  description: 
+  description: Mot cong cu tuyet voi cho nhung luc banh xe cua ban khong duoc khoe
   itemIcon: {fileID: -623034687, guid: 4317e63293f50664b8f432af73e00386, type: 3}

@@ -9,7 +9,9 @@ public class Inventory : MonoBehaviour
 
     [Header("Inventory UI")]
     [SerializeField] private Transform inventorySlots;
+    [SerializeField] private Transform inventorySlotsInShop;
     private ItemSlot[] itemSlot;
+    private ItemSlot[] itemSlotInShop;
     public GameObject UI;
     private void Start()
     {     
@@ -17,6 +19,8 @@ public class Inventory : MonoBehaviour
         inventoryDic = new();
 
         itemSlot = inventorySlots.GetComponentsInChildren<ItemSlot>();
+        itemSlotInShop = inventorySlotsInShop.GetComponentsInChildren<ItemSlot>();
+
         UI.gameObject.SetActive(false);
     }
     public void AddItem(ItemSO _item)
@@ -53,10 +57,19 @@ public class Inventory : MonoBehaviour
             itemSlot[i].CleanSlot();
         }
 
-        for(int i = 0; i < inventory.Count; i++)
+        for (int i = 0; i < itemSlotInShop.Length; i++)
+        {
+            itemSlotInShop[i].CleanSlot();
+        }
+
+
+        for (int i = 0; i < inventory.Count; i++)
         {
             itemSlot[i].UpdateSlot(inventory[i]);
+            itemSlotInShop[i].UpdateSlot(inventory[i]);
         }
+
+        
     }
 
     public void IsOpen(bool _isOpen)
