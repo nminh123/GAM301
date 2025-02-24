@@ -6,7 +6,7 @@ public class AssetsBundle : MonoBehaviour
     [MenuItem("Assets/Build AssetBundles")]
     static void BuildAllAssetBundles()
     {
-        string path = "Assets/StreamingAssets/Bundle";
+        string path = "Assets/StreamingAssets/Bundles";
         if(!System.IO.Directory.Exists(path))
         {
             System.IO.Directory.CreateDirectory(path);

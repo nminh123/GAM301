@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2287901013
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: race-car
+      Dependencies: {}

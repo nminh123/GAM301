@@ -513,11 +513,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 36677533}
   m_CullTransparentMesh: 0
---- !u!146 &42702561 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 5064654061568696048, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &45686792
 GameObject:
   m_ObjectHideFlags: 0
@@ -4303,59 +4298,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273064115}
   m_CullTransparentMesh: 0
---- !u!1 &285671524
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 285671525}
-  - component: {fileID: 285671526}
-  m_Layer: 0
-  m_Name: Collide
-  m_TagString: Spoiler
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &285671525
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285671524}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1771127961}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &285671526
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 285671524}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.483146, y: 0.13124251, z: 0.725018}
-  m_Center: {x: 0.0018781424, y: -0.0858475, z: -0.13749099}
 --- !u!1 &286050551
 GameObject:
   m_ObjectHideFlags: 0
@@ -4950,11 +4892,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335210331}
   m_CullTransparentMesh: 0
---- !u!4 &338532453 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8957622978679907969, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &341902658
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,11 +5783,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 402818499}
   m_CullTransparentMesh: 1
---- !u!146 &415452142 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 7152711881538079191, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &416338440
 GameObject:
   m_ObjectHideFlags: 0
@@ -7663,11 +7595,6 @@ MonoBehaviour:
   m_Spacing: {x: 25, y: 24}
   m_Constraint: 1
   m_ConstraintCount: 6
---- !u!146 &527412516 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 750726510976462402, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &530072396
 GameObject:
   m_ObjectHideFlags: 0
@@ -19875,6 +19802,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: vBasicController_PrototypeCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 4844821004237486519, guid: 864256c7121fd40b18cfd0502556c874, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8978475645033098853, guid: 864256c7121fd40b18cfd0502556c874, type: 3}
       propertyPath: rb
       value: 
@@ -19886,7 +19817,7 @@ PrefabInstance:
     - target: {fileID: 8978475645033098853, guid: 864256c7121fd40b18cfd0502556c874, type: 3}
       propertyPath: carPosition
       value: 
-      objectReference: {fileID: 833464882}
+      objectReference: {fileID: 0}
     - target: {fileID: 8978475645033098853, guid: 864256c7121fd40b18cfd0502556c874, type: 3}
       propertyPath: carTransform
       value: 
@@ -19894,7 +19825,7 @@ PrefabInstance:
     - target: {fileID: 8978475645033098853, guid: 864256c7121fd40b18cfd0502556c874, type: 3}
       propertyPath: spoilerTransform
       value: 
-      objectReference: {fileID: 1771127961}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21653,40 +21584,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821379370}
   m_CullTransparentMesh: 0
---- !u!1 &833464881 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7282772008711335601, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &833464882 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7951749605284508683, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
   m_PrefabInstance: {fileID: 1679362620}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &833464883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833464881}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c238c623c963e4175a4c22a9b5071e0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1339158785}
-  maxSpeed: 300
-  breakForce: 30000
-  maxSteerAngle: 20
-  frontLeftWheelCollider: {fileID: 1851814251}
-  frontRightWheelCollider: {fileID: 527412516}
-  rearLeftWheelCollider: {fileID: 415452142}
-  rearRightWheelCollider: {fileID: 42702561}
-  frontLeftWheelTransform: {fileID: 338532453}
-  frontRightWheelTransform: {fileID: 1031793473}
-  rearLeftWheelTransform: {fileID: 1350120224}
-  rearRightWheelTransform: {fileID: 849190612}
 --- !u!1 &835609002
 GameObject:
   m_ObjectHideFlags: 0
@@ -21901,11 +21803,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 840517971}
   m_CullTransparentMesh: 0
---- !u!4 &849190612 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5224178908710053518, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &856949105
 GameObject:
   m_ObjectHideFlags: 0
@@ -25128,11 +25025,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021657392}
   m_CullTransparentMesh: 0
---- !u!4 &1031793473 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5029632089328402609, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1047032731
 GameObject:
   m_ObjectHideFlags: 0
@@ -29274,6 +29166,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1325467265}
   - component: {fileID: 1325467266}
+  - component: {fileID: 1325467267}
+  - component: {fileID: 1325467268}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -29317,6 +29211,40 @@ MonoBehaviour:
   inventoryManager: {fileID: 1613481946}
   soundManager: {fileID: 1711881189}
   toolTipManager: {fileID: 462317531}
+--- !u!114 &1325467267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325467264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2eb99cee3ab04491886bc8756e35add7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bundleInfos:
+  - bundleName: veh_blue
+    assetName: Vehicle_Car_color02
+  - bundleName: veh_red
+    assetName: Vehicle_Pick up Truck_color01
+  - bundleName: veh_amb
+    assetName: Vehicle_Ambulance
+--- !u!114 &1325467268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325467264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 303c96ffe51d342c392f533e292da82a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: {fileID: 937573697}
+  text: {fileID: 4978215919056090159}
+  starvingProcess: 100
 --- !u!1 &1328131625
 GameObject:
   m_ObjectHideFlags: 0
@@ -29510,11 +29438,6 @@ Rigidbody:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3989143787924085172, guid: 864256c7121fd40b18cfd0502556c874, type: 3}
   m_PrefabInstance: {fileID: 689767519}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1350120224 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3990508321972570541, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1350954523
 GameObject:
@@ -33459,10 +33382,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2369060491348006307, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-      propertyPath: m_Constraints
-      value: 64
-      objectReference: {fileID: 0}
+    - target: {fileID: 2782956629940897754, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1339158785}
     - target: {fileID: 7282772008711335601, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
       propertyPath: m_Name
       value: Free Racing Car Gray Variant
@@ -33513,14 +33436,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 3069668287634036188, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 285671525}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7282772008711335601, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 833464883}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
 --- !u!1 &1686109068
 GameObject:
@@ -35043,11 +34960,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1770256824}
   m_CullTransparentMesh: 0
---- !u!4 &1771127961 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3069668287634036188, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1807648932
 GameObject:
   m_ObjectHideFlags: 0
@@ -35883,11 +35795,6 @@ MonoBehaviour:
   m_Spacing: {x: 25, y: 24}
   m_Constraint: 0
   m_ConstraintCount: 6
---- !u!146 &1851814251 stripped
-WheelCollider:
-  m_CorrespondingSourceObject: {fileID: 7878892768972602533, guid: 4d1624804e8167f479ab63c5302ff1d5, type: 3}
-  m_PrefabInstance: {fileID: 1679362620}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1853024147
 GameObject:
   m_ObjectHideFlags: 0
@@ -46826,7 +46733,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 999/999
+  m_text: 100
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f58c05479cb14f588efcdfcbdab347c, type: 2}
   m_sharedMaterial: {fileID: 7423409246693961632, guid: 5f58c05479cb14f588efcdfcbdab347c, type: 2}
