@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 998268804
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: race_car
+      Dependencies: {}
+    Info_1:
+      Name: veh_amb
+      Dependencies: {}
+    Info_2:
+      Name: veh_white
+      Dependencies: {}
+    Info_3:
+      Name: veh_blue
+      Dependencies: {}
+    Info_4:
+      Name: veh_red
+      Dependencies: {}
+    Info_5:
+      Name: veh_pktruck
+      Dependencies: {}
+    Info_6:
+      Name: veh_pktruckblue
+      Dependencies: {}
+    Info_7:
+      Name: veh_suv
+      Dependencies: {}
+    Info_8:
+      Name: veh_suv1
+      Dependencies: {}
+    Info_9:
+      Name: veh_suv2
+      Dependencies: {}

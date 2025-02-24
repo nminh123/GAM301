@@ -1,0 +1,44 @@
+ManifestFileVersion: 0
+CRC: 1411279232
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7c8c499dd285ce2fa26c59d3785b0ca7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 937c75966b75442dff14ac8552d2b512
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 7c8c499dd285ce2fa26c59d3785b0ca7
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: c238c623c963e4175a4c22a9b5071e0b, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 146
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/GAM301/Prefabs/Free Racing Car Gray Variant.prefab
+Dependencies: []

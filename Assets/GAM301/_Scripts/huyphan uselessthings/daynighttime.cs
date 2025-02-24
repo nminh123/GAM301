@@ -14,7 +14,7 @@ public class DayNightCycle : MonoBehaviour
     public int startMonth = 1;
 
     [Header("Season Settings")]
-    public Image seasonIcon; 
+    public Image seasonIcon;
     public Sprite springIcon, summerIcon, autumnIcon, winterIcon;
 
     [Header("Skybox Settings")]
@@ -50,6 +50,8 @@ public class DayNightCycle : MonoBehaviour
     private int day;
     private int month;
     private float targetIntensity;
+    public float gameElapsedTime { get; set; } = 0f;
+    public bool isHungry { get; set; } = false;
 
     void Start()
     {
@@ -71,6 +73,26 @@ public class DayNightCycle : MonoBehaviour
         UpdateSeason();
         UpdateSkyColor();
         UpdateWeather();
+        TaoDoiBungQua();
+    }
+
+    void TaoDoiBungQua()
+    {
+        float deltaTime = Time.deltaTime;
+        float timeToHungry = 40f;
+        currentTimeOfDay += deltaTime * timeMultiplier;
+        gameElapsedTime += deltaTime * timeMultiplier;
+
+        if (gameElapsedTime >= timeToHungry)
+        {
+            Debug.Log("Tao đói quá men!!");
+            isHungry = true;
+            gameElapsedTime = 0f; // Reset lại nếu cần
+        }
+        else if(gameElapsedTime < timeToHungry)
+        {
+            isHungry = false;
+        }
     }
 
     private void UpdateTimeOfDay()
@@ -159,7 +181,7 @@ public class DayNightCycle : MonoBehaviour
         float timePercentage = currentTimeOfDay / 24f;
         sunLight.color = dayCycleColor.Evaluate(timePercentage);
 
-        if (currentTimeOfDay >= 5f && currentTimeOfDay < 19.20f) 
+        if (currentTimeOfDay >= 5f && currentTimeOfDay < 19.20f)
         {
             if (isRaining && rainSkybox != null)
             {
@@ -181,7 +203,7 @@ public class DayNightCycle : MonoBehaviour
                     RenderSettings.skybox = winterSkybox;
             }
         }
-        else 
+        else
         {
             RenderSettings.skybox = isRaining || isSnowing ? rainSkybox : nightSkybox;
         }
@@ -191,7 +213,7 @@ public class DayNightCycle : MonoBehaviour
     {
         float chance = Random.value;
         Debug.Log("Chance value: " + chance);
-        if (month >= 12 || month <= 2) 
+        if (month >= 12 || month <= 2)
         {
             isSnowing = chance < snowChance;
             isRaining = false;

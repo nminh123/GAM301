@@ -20,7 +20,10 @@ public class CarController : MonoBehaviour
     [SerializeField] private Transform frontLeftWheelTransform, frontRightWheelTransform;
     [SerializeField] private Transform rearLeftWheelTransform, rearRightWheelTransform;
 
-
+    void Awake()
+    {
+        player = FindObjectOfType<PlayerScript>();   
+    }
 
     private void FixedUpdate()
     {
