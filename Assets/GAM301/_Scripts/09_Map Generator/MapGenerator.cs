@@ -45,7 +45,7 @@ public class MapGenerator : MonoBehaviour
         GameObject chunkPrefab = chunkPrefabs[Random.Range(0, chunkPrefabs.Length)];
 
         // Sinh chunk mới tại vị trí anchor point
-        GameObject newChunk = Instantiate(chunkPrefab, lastAnchorPoint.position, Quaternion.identity);
+        GameObject newChunk = Instantiate(chunkPrefab, new Vector3(lastAnchorPoint.position.x - 150f, lastAnchorPoint.position.y, lastAnchorPoint.position.z), Quaternion.identity);
 
         // Cập nhật lastAnchorPoint với chunk vừa tạo
         lastAnchorPoint = newChunk.transform.Find("End Point");
