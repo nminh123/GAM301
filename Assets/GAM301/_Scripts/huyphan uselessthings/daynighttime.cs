@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class DayNightCycle : MonoBehaviour
 {
@@ -53,6 +54,18 @@ public class DayNightCycle : MonoBehaviour
     public float gameElapsedTime { get; set; } = 0f;
     public bool isHungry { get; set; } = false;
 
+    // void Awake()
+    // {
+    //     rainParticle = GameObject.FindGameObjectWithTag("rain").GetComponent<ParticleSystem>();
+    //     snowParticle = GameObject.FindGameObjectWithTag("snow").GetComponent<ParticleSystem>();
+    // }
+
+    void OnEnable()
+    {
+        rainParticle = GameObject.FindGameObjectWithTag("rain").GetComponent<ParticleSystem>();
+        snowParticle = GameObject.FindGameObjectWithTag("snow").GetComponent<ParticleSystem>();
+    }
+
     void Start()
     {
         day = startDay;
@@ -89,11 +102,29 @@ public class DayNightCycle : MonoBehaviour
             isHungry = true;
             gameElapsedTime = 0f; // Reset lại nếu cần
         }
-        else if(gameElapsedTime < timeToHungry)
+        else if (gameElapsedTime < timeToHungry)
         {
             isHungry = false;
         }
     }
+
+    IEnumerator ThunderEffect()
+{
+    while (isRaining) // Chỉ chạy khi trời mưa
+    {
+        int randomValue = Random.Range(1, 50);
+        if (randomValue == 2 || randomValue == 5 || randomValue == 10)
+        {
+            sunLight.enabled = false;
+            Debug.Log("Sét đánh! Giá trị random: " + randomValue);
+            yield return new WaitForSeconds(0.2f); // Chớp sáng 0.2s
+            sunLight.enabled = true;
+        }
+
+        yield return new WaitForSeconds(Random.Range(2f, 5f)); // Kiểm tra lại sau 2-5s
+    }
+}
+
 
     private void UpdateTimeOfDay()
     {
@@ -251,7 +282,11 @@ public class DayNightCycle : MonoBehaviour
         // Điều chỉnh trạng thái mưa
         if (isRaining && rainParticle != null)
         {
-            if (!rainParticle.isPlaying) rainParticle.Play();
+            if (!rainParticle.isPlaying)
+            {
+                rainParticle.Play();
+                StartCoroutine(ThunderEffect());   
+            }
         }
         else if (!isRaining && rainParticle != null)
         {
