@@ -37,6 +37,7 @@ public class DayNightCycle : MonoBehaviour
     [Header("Weather Settings")]
     public ParticleSystem rainParticle;
     public ParticleSystem snowParticle;
+    public GameObject lightning;
     public bool isRaining = false; // Trạng thái mưa (public để điều chỉnh thủ công)
     public bool isSnowing = false; // Trạng thái tuyết (public để điều chỉnh thủ công)
     public float rainChance = 0.2f; // Tỷ lệ mưa (0.2 = 20%)
@@ -54,6 +55,8 @@ public class DayNightCycle : MonoBehaviour
     public float gameElapsedTime { get; set; } = 0f;
     public bool isHungry { get; set; } = false;
 
+    public Transform player;
+
     // void Awake()
     // {
     //     rainParticle = GameObject.FindGameObjectWithTag("rain").GetComponent<ParticleSystem>();
@@ -68,6 +71,8 @@ public class DayNightCycle : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.FindWithTag("Player").GetComponent<Transform>();
+
         day = startDay;
         month = startMonth;
         timeMultiplier = 1440f / (dayLengthInMinutes * 60f);
@@ -109,21 +114,38 @@ public class DayNightCycle : MonoBehaviour
     }
 
     IEnumerator ThunderEffect()
-{
-    while (isRaining) // Chỉ chạy khi trời mưa
     {
-        int randomValue = Random.Range(1, 50);
-        if (randomValue == 2 || randomValue == 5 || randomValue == 10)
+        while (isRaining) // Chỉ chạy khi trời mưa
         {
-            sunLight.enabled = false;
-            Debug.Log("Sét đánh! Giá trị random: " + randomValue);
-            yield return new WaitForSeconds(0.2f); // Chớp sáng 0.2s
-            sunLight.enabled = true;
-        }
+            int randomValue = Random.Range(1, 50);
+            if (randomValue == 2 || randomValue == 5 || randomValue == 10)
+            {
+                if (player != null)
+                {
+                    Vector3 randomOffset = new Vector3(
+                    Random.Range(-50f, 50f),
+                    Random.Range(50f, 120f),
+                    Random.Range(-50f, 50f)
+                );
 
-        yield return new WaitForSeconds(Random.Range(2f, 5f)); // Kiểm tra lại sau 2-5s
+                    lightning.transform.position = player.transform.position + randomOffset;
+                    lightning.transform.localScale = new Vector3(1, Random.Range(55f, 130f), 1);
+                    lightning.transform.localRotation = Quaternion.Euler(new Vector3(0, 0, 80));
+
+                    // Hiển thị sét
+                    sunLight.enabled = false;
+                    lightning.gameObject.SetActive(true);
+                    Debug.Log("Sét đánh gần player!");
+
+                    yield return new WaitForSeconds(0.2f);
+                    sunLight.enabled = true;
+                    lightning.gameObject.SetActive(false);
+                }
+            }
+
+            yield return new WaitForSeconds(Random.Range(2f, 5f));
+        }
     }
-}
 
 
     private void UpdateTimeOfDay()
@@ -285,7 +307,7 @@ public class DayNightCycle : MonoBehaviour
             if (!rainParticle.isPlaying)
             {
                 rainParticle.Play();
-                StartCoroutine(ThunderEffect());   
+                StartCoroutine(ThunderEffect());
             }
         }
         else if (!isRaining && rainParticle != null)
